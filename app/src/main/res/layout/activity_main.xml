@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/back"
     tools:context="com.londonappbrewery.iampoor.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:background="#289"
-        android:src="@drawable/coal"
-        android:contentDescription="TODO" />
-
-    <TextView
-        android:id="@+id/textView"
+        android:id="@+id/coal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/pic"
+        android:src="@drawable/coal"
+        android:text="@string/poor" />
+
+    <TextView
+        android:id="@+id/I_am"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/coal"
         android:layout_centerHorizontal="true"
         android:text="@string/poor"
-        android:textColor="@android:color/black"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/Poor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/coal"
+        android:layout_toEndOf="@+id/I_am"
+        android:layout_toRightOf="@+id/I_am"
+        android:text="@string/po"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
